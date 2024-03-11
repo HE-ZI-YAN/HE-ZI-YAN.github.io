@@ -117,4 +117,24 @@
 <p>省流版：四月份（还是五月份记不太清楚了）开始备考，准备备战408（要学就学最难的，以后会成为一个大趋势，但是不太建议去考408，因为不确定性太大，很可能努力复习了一年之后还是没考好，一年比一年偏），由于我没有学过计算机组成原理（一下简称计组），所以就计组和高数基础一起开始学（当时学校同时还开了一门操作系统，所以我也就同时学了两门课程），计组听得比较认真，由于第一次学而且还很难，说实话好多不好理解的地方没听懂就略过去了，高数我在大一的时候还是有一点基础的，毕竟我在大一学习的时候就听得张宇的课，所以数学我都是开1.5倍速来听，当时第一次考研，什么都不懂，看别人买来了880，我也跟着买了880（后来他们说这是强化的时候要用的），直接跟着做上面的基础题（事实证明这其实也没什么，只要对题型掌握熟练就可以了）。大三下学期期末考试之前，我把计组囫囵吞枣过了一遍，包括课后比较简单的选择题，暑假之前就把高数基础看完了，做了一部分880的基础篇（因为大部分知识点都忘了，而且当时我感觉基础篇也好难啊😭，但还是硬着头皮做了做）。<br>暑假开始强化学习，看了网上的许多经验贴，感觉把高数的提高课看看就可以了，线代主要还是做题，所以我果断放弃了线代的强化课，开始了我的高数提高，在此期间，我用的唯二两本习题册就是《李林880》与《张宇1000》，做的时候我感觉好难啊，甚至一度怀疑自己是否会学习（这种状态一直伴随着我的备考过程），同时我开始学数据结构，当时的我非常自大，认为数据结构就是一门小儿科的科目，所以就直接从后面的树开始听课，前面的都直接做题了（后面想想还是真是眼高手低）。英语在此期间一直背着单词，不停地背，从小我就英语不好，小时候都是不及格的那种，直到高中最后一个学期，我的英语才慢慢有了起色。但是大学时我的英语水平再次回落到谷底，四级考了四次都没过，我心想：没关系，反正我学的是计算机，到时候私企也不看四级过没过，想要考研的念头还是因为某人，所以我就开始不停地背单词（事实证明这是真的管用）。<br>暑假过后开始慢慢刷题，做了880和1000之后有了一些感觉，但是专业课做起来非常折磨，做选择题都会错一大堆，不过已经选择了这条路，总不能说中途放弃吧。于是我只能尽力的学，开始给手机加锁，累了也是会玩会手机的，听听宇哥和咸鱼的安慰和经历，听听《no fear in my heart》，不知不觉就已经到了十一月。当时的我开始疯狂的做408真题，已经没有时间再去做各种数学预测卷了，所以我就把所有的赌注都压倒了历年真题上，做了一遍又一遍，直到把408不懂得全部搞懂，数学算错的和难算的全部都算一遍。政治也就听了听空卡的速成课，感觉徐涛的废话太多，用了苍盾考研小程序做了每一家的政治模拟题，数学与408也是一遍又一遍。<br>十二月，买了肖四，背了马原，其他的大题随便选了几个背了背，只能说时间真的来不及了。专业课跟数学做的我头大，英语简单的分高，</p>
 ]]></content>
   </entry>
+  <entry>
+    <title>毕业设计环境启动配置</title>
+    <url>/2024/03/11/bishe/</url>
+    <content><![CDATA[<ul>
+<li></li>
+</ul>
+<p>//启动zookeeper</p>
+<pre class="line-numbers language-none"><code class="language-none">zk.sh start<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>//启动kafka</p>
+<pre class="line-numbers language-none"><code class="language-none">kf.sh start<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>//启动消费者</p>
+<pre class="line-numbers language-none"><code class="language-none">kf.sh kc ODS_BASE_LOG_1018（主题）<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>//生成数据</p>
+<pre class="line-numbers language-none"><code class="language-none">lg.sh<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>//启动maxwell</p>
+<pre class="line-numbers language-none"><code class="language-none">bin/maxwell --config config.properties --daemon<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>jps查看进程启动情况<br><img src="/image.png" alt="alt text"></p>
+]]></content>
+  </entry>
 </search>
