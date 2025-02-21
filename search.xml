@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>毕业设计环境启动配置</title>
+    <url>/2024/03/10/bishe/</url>
+    <content><![CDATA[<ul>
+<li></li>
+</ul>
+<p>//启动zookeeper</p>
+<pre class="line-numbers language-none"><code class="language-none">zk.sh start<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>//启动kafka</p>
+<pre class="line-numbers language-none"><code class="language-none">kf.sh start<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>//启动消费者</p>
+<pre class="line-numbers language-none"><code class="language-none">kf.sh kc ODS_BASE_LOG_1018（主题）<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>//生成数据</p>
+<pre class="line-numbers language-none"><code class="language-none">lg.sh<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>//启动maxwell</p>
+<pre class="line-numbers language-none"><code class="language-none">bin/maxwell --config config.properties --daemon<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>//启动ES</p>
+<pre class="line-numbers language-none"><code class="language-none">es.sh start
+# 启动kibana
+bin/kibana<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>jps查看进程启动情况<br><img src="/2024/03/10/bishe/image.png" alt="毕设"></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>个人简历</title>
+    <url>/2025/02/21/about/</url>
+    <content><![CDATA[<h2 id="贺xx"><a href="#贺xx" class="headerlink" title="贺xx"></a>贺xx</h2><p>166xxxxxx035 | <a href="mailto:25712xxxx8@qq.com">25712xxxx8@qq.com</a> | 河北邯郸<br><a href="https://www.cnblogs.com/java-sixxxx">https://www.cnblogs.com/java-sixxxx</a><br>应届生 | Java后端开发</p>
+<h4 id="教育经历"><a href="#教育经历" class="headerlink" title="教育经历"></a>教育经历</h4><hr>
+<h6 style="display: flex;justify-content: space-between;">
+<span>石家庄xx大学</span><span>软件工程 | 本科</span><span>2020.09 - 2024.06</span>
+</h6>
+
+<h4 id="专业技能"><a href="#专业技能" class="headerlink" title="专业技能"></a>专业技能</h4><hr>
+<ul>
+<li><strong>计算机基础</strong>：熟练掌握操作系统，数据结构，计算机网络，计算机组成原理等基础的计算机原理知识</li>
+<li><strong>Java基础</strong>：熟练掌握Java语法，熟悉Java集合，多线程等相关技术</li>
+<li><strong>Linux</strong>：熟练使用Linux，有Linux下开发的实际经验</li>
+<li><strong>数据库</strong>：熟练掌握MySQL数据库以及常见优化手段（比如索引、SQL优化、读写分离&amp;分库分表），Redis使用经验丰富，了解MongDB，<br>Neo4j</li>
+<li><strong>搜索引擎</strong>：熟悉Elasticsearch基本操作的使用，了解Solr</li>
+<li><strong>框架</strong>：熟练掌握Spring、SpringMVC、SpringBoot、MyBatis、MybatisPlus等主流开发框架</li>
+<li><strong>分布式</strong>：熟悉分布式下的常见理论CAP、BASE，熟悉分布式事务（Seata、2PC、3PC、TCC），分布式ID（UUID、Snowflake），了解<br>Raft算法，熟悉SpringCloud、SpringCloudAlibaba常见组建的使用</li>
+<li><strong>工具</strong>：熟悉Docker，Git，Maven的基本使用，jmeter压力测试工具的使用</li>
+<li><strong>前端</strong>：熟悉vue的基本开发，有网页及小程序前端开发经验</li>
+</ul>
+<h4 id="实习经历"><a href="#实习经历" class="headerlink" title="实习经历"></a>实习经历</h4><hr>
+<h6 style="display: flex;justify-content: space-between;">
+<span>xxxxx有限责任公司</span><span>后端开发工程师</span><span>2023.05 - 2023.07</span>
+</h6>
+
+<ul>
+<li><strong>独立负责智慧农业管理平台项目</strong>中用户信息管理模块的开发，在项目上线前成功实现了该模块的全部功能。在紧迫的时间压力下，高效推动任务完成，确保项目按时交付。</li>
+<li>进行用户信息管理模块开发完成后，迅速参与前端页面的编写工作，<strong>对整体项目进展做出贡献</strong>。</li>
+<li>熟练运用GitLab、Git等版本控制工具，具备解决合并不同分支代码冲突的能力，<strong>确保代码的顺利合并和团队协作的有效进行</strong>。</li>
+<li>在实习期间，以积极的工作态度、专业的技术能力和严谨的工作态度获得了mentor和同事的一致认可。按时交付任务，对项目贡献显著。</li>
+<li>在团队中展现了高度的专业素养，乐于协助解决问题，促进项目的成功推进。</li>
+</ul>
+<h4 id="项目经历"><a href="#项目经历" class="headerlink" title="项目经历"></a>项目经历</h4><hr>
+<h6 style="display: flex;justify-content: space-between;">
+<span>铁铁外卖</span><span>后端开发工程师</span><span>2023.02 - 2023.06</span>
+</h6>
+
+<p><strong>项目介绍：</strong><br>校园外卖点餐系统是专门为满足相约学生定外卖需求定制的一款软件产品，包括 系统管理后台 和 小程序端应用 两部分。<br><strong>使用技术：</strong><br>SpringBoot，Mybatis，Redis，Mysql，Swagger，JWT，WebSocket，ElasticSearch<br><strong>项目亮点：</strong></p>
+<ul>
+<li>使用<strong>ThreadLocal</strong>存储当前用户表示解决多个层之间传递当前用户标识的问题</li>
+<li>使用<strong>Swagger</strong>进行前后端接口的互联互通</li>
+<li>使用<strong>JWT</strong>进行用户身份验证，使得系统更易扩展</li>
+<li>使用Redis来存储需要缓存的数据，减轻数据库压力，使用<strong>布隆过滤器</strong>解决缓存穿透，使用<strong>互斥锁</strong>解决缓存击穿</li>
+<li>使用<strong>ElasticSearch</strong>代替普通的mysql查询对商品进行检索，对结果显示进行高亮</li>
+<li>使用<strong>WebSocket</strong>实现用户下单或催单时能够给管理端进行提醒</li>
+<li>实现优惠券及秒杀功能，通过<strong>乐观锁</strong>解决超卖问题，使用<strong>分布式锁</strong>，解决一人一单问题</li>
+<li>提交订单时保证接口的<strong>幂等性</strong></li>
+</ul>
+<h6 style="display: flex;justify-content: space-between;">
+<span>龙源风电预测与管理系统（中国软件杯赛题）</span><span>后端开发工程师</span><span>2023.06 - 2023.08</span>
+</h6>
+
+<p><strong>项目介绍：</strong><br>一个分布式前后端分离项目，采用了当今主流的系统架构和技术栈。该系统分为风力发电数据管理，设备控制，实时监控与报警，电功率与风场<br>预测（前台显示），性能监控与优化（后台调整）等不同的服务，满足了对风场监控与预测的所有功能，极大提高企业效率与利润，也提高了对<br>于自然资源的利用率。<br><strong>所用技术：</strong><br>Springboot，SpringCloudAlibaba，MybatisPlus，Redis，RabbitMQ，Nginx，Docker，echarts<br><strong>项目亮点：</strong></p>
+<ul>
+<li>该项目使用<strong>微服务架构</strong>，将整个系统分为了不同功能的小型服务，并使用统一的<strong>Gateway网关</strong>访问该系统</li>
+<li>借助<strong>Nginx</strong>负载均衡到网关,搭建域名访问环境</li>
+<li>使用<strong>Nacos</strong>作为服务注册、配置中心，可以感知各个微服务的位置，实现源码与配置的分离</li>
+<li>利用<strong>OpenFeign</strong>实现不同微服务之间的交互</li>
+<li>使用<strong>Seata</strong>解决分布式事务问题，对于同一风场的多个风机同时发送数据等高并发业务，使用<strong>RabbitMQ</strong>做可靠消息保证最终事务的一致性</li>
+<li>使用<strong>RESTful 风格</strong>API调用Python预测模型，并使用<strong>echarts</strong>进行滚动预测与实时预测的显示</li>
+<li>实现<strong>单点登录，短线验证码</strong>等功能，保证了可扩展性</li>
+</ul>
+<h4 id="🏆荣誉奖项"><a href="#🏆荣誉奖项" class="headerlink" title="🏆荣誉奖项"></a>🏆荣誉奖项</h4><hr>
+<ul>
+<li>博客园浏览量 <u>11W+</u></li>
+<li>第十二届“中国软件杯” <u>龙源风电预测赛道</u> 北部赛区三等奖</li>
+<li>第十三届“蓝桥杯”<u>算法类</u>省赛三等奖</li>
+<li>河北省大学生创新创业年会二等奖</li>
+<li>多次获得三好学生与学院奖学金</li>
+<li>全国大学生数学建模竞赛省二</li>
+<li><u>软件著作权</u>两项</li>
+<li>计算机设计大赛省二</li>
+</ul>
+<h4 id="校内活动"><a href="#校内活动" class="headerlink" title="校内活动"></a>校内活动</h4><hr>
+<h6 style="display: flex;justify-content: space-between;">
+<span>参加校内众创空间</span><span>2020.12 - 2021.12</span>
+</h6>
+校内众创空间是一个融合计算机、机械、电气等各个学科的实验室。主要是在老师的带领下，通过本科生的不断学习来创造出各种的机械结构与机器人，包括无人机，机器车，机器鱼等格式各样的种类。我在众创空间中主要负责电控方面的内容，通过学习不同算法并将其应用到各种机器人上，使其完成一系列的动作与指令。 在实验室中待过得这一段时间中，我获得了持续学习的能力，也培养了团队互相合作的意识，也帮我交到了许多志同道合的朋友们，虽然会经常熬夜做东西，但是机器人动起来的瞬间是无比的激动与开心。
+
+
+<h4 id="个人介绍"><a href="#个人介绍" class="headerlink" title="个人介绍"></a>个人介绍</h4><hr>
+<p>本人毕业于软件工程专业，高中时便对计算机以及相关技术着迷，进入大学后，在学校教学的理论基础上进行代码实战并积极参加竞赛，多次获得奖学金，参加的竞赛也帮我增加了实战经验与团队合作能力，对项目开发有着自己的理解与认识，更重要的是获得了持续学习的习惯与能力，从而拿到了多个省级奖项以及两项软著。<br>在大学学习过程中，我一直保持着记录博客的习惯，把自己遇到的问题与想法都以博客的形式进行发表，至今阅读量已达到11W+。<br>课外学习时不断从网上查找资料，丰富自己的技术栈，包括：（1）熟练掌握计算机基础知识；（2）熟练掌握Java语法，熟悉Java集合，多线程等相关技术；（3）熟练使用Linux，有Linux下开发的实际经验；（4）熟练掌握MySQL数据库以及常见优化手段（比如索引、SQL优化、读写分离＆分库分表），Redis使用经验丰富，了解MongDB，Neo4j；（5）：熟悉Elasticsearch基本操作的使用，了解Solr；（6）熟练掌握Spring、SpringMVC、SpringBoot、MyBatis、MybatisPlus等主流开发框架；（7）熟悉分布式下的常见理论CAP、BASE，熟悉分布式事务（Seata、2PC、3PC、TCC），分布式ID（UUID、Snowflake），了解Raft算法，熟悉SpringCloud、SpringCloudAlibaba常见组建的使用；（8）熟悉Docker，Git，Maven的基本使用，jmeter压力测试工具的使用；</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>jQuery对表单的操作及更多应用</title>
+    <url>/2017/05/26/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2>]]></content>
+      <categories>
+        <category>web前端</category>
+      </categories>
+      <tags>
+        <tag>jQuery</tag>
+        <tag>表格</tag>
+        <tag>表单验证</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>数美科技一面</title>
+    <url>/2024/02/29/interview_1/</url>
+    <content><![CDATA[<p>1.拷打实习经历<br>2.如何判断map相同<br>3.sql索引，什么情况下会走索引，什么情况下不会走<br>4.linux查看进程状态命令<br>5.时间复杂度考察<br>6.进程线程区分，进程通信，用过哪些，了解协程吗<br>7.输入一个网址，给出详细过程<br>8.域名如何转化成ip地址</p>
+]]></content>
+      <categories>
+        <category>面试</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>关于考研</title>
+    <url>/2025/02/21/kaoyan/</url>
+    <content><![CDATA[<blockquote>
+<p><strong>学着学习，学会学习，学着记录，学着思考</strong><br>可能我考研失败了，就没有时间再发这篇文章了，虽然文笔烂的一批，但是我还是想把把它记录下来，致敬我这考研坎坷的一路。</p>
+</blockquote>
+<p>省流版：四月份（还是五月份记不太清楚了）开始备考，准备备战408（要学就学最难的，以后会成为一个大趋势，但是不太建议去考408，因为不确定性太大，很可能努力复习了一年之后还是没考好，一年比一年偏），由于我没有学过计算机组成原理（一下简称计组），所以就计组和高数基础一起开始学（当时学校同时还开了一门操作系统，所以我也就同时学了两门课程），计组听得比较认真，由于第一次学而且还很难，说实话好多不好理解的地方没听懂就略过去了，高数我在大一的时候还是有一点基础的，毕竟我在大一学习的时候就听得张宇的课，所以数学我都是开1.5倍速来听，当时第一次考研，什么都不懂，看别人买来了880，我也跟着买了880（后来他们说这是强化的时候要用的），直接跟着做上面的基础题（事实证明这其实也没什么，只要对题型掌握熟练就可以了）。大三下学期期末考试之前，我把计组囫囵吞枣过了一遍，包括课后比较简单的选择题，暑假之前就把高数基础看完了，做了一部分880的基础篇（因为大部分知识点都忘了，而且当时我感觉基础篇也好难啊😭，但还是硬着头皮做了做）。<br>暑假开始强化学习，看了网上的许多经验贴，感觉把高数的提高课看看就可以了，线代主要还是做题，所以我果断放弃了线代的强化课，开始了我的高数提高，在此期间，我用的唯二两本习题册就是《李林880》与《张宇1000》，做的时候我感觉好难啊，甚至一度怀疑自己是否会学习（这种状态一直伴随着我的备考过程），同时我开始学数据结构，当时的我非常自大，认为数据结构就是一门小儿科的科目，所以就直接从后面的树开始听课，前面的都直接做题了（后面想想还是真是眼高手低）。英语在此期间一直背着单词，不停地背，从小我就英语不好，小时候都是不及格的那种，直到高中最后一个学期，我的英语才慢慢有了起色。但是大学时我的英语水平再次回落到谷底，四级考了四次都没过，我心想：没关系，反正我学的是计算机，到时候私企也不看四级过没过，想要考研的念头还是因为某人，所以我就开始不停地背单词（事实证明这是真的管用）。<br>暑假过后开始慢慢刷题，做了880和1000之后有了一些感觉，但是专业课做起来非常折磨，做选择题都会错一大堆，不过已经选择了这条路，总不能说中途放弃吧。于是我只能尽力的学，开始给手机加锁，累了也是会玩会手机的，听听宇哥和咸鱼的安慰和经历，听听《no fear in my heart》，不知不觉就已经到了十一月。当时的我开始疯狂的做408真题，已经没有时间再去做各种数学预测卷了，所以我就把所有的赌注都压倒了历年真题上，做了一遍又一遍，直到把408不懂得全部搞懂，数学算错的和难算的全部都算一遍。政治也就听了听空卡的速成课，感觉徐涛的废话太多，用了苍盾考研小程序做了每一家的政治模拟题，数学与408也是一遍又一遍。<br>十二月，买了肖四，背了马原，其他的大题随便选了几个背了背，只能说时间真的来不及了。专业课跟数学做的我头大，英语简单的分高，</p>
+]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2025/02/21/test/</url>
+    <content><![CDATA[<h1 id="这是标题"><a href="#这是标题" class="headerlink" title="这是标题"></a>这是标题</h1><p>测试hexo<br>再测试一遍</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>个人感悟</title>
+    <url>/2024/04/22/%E4%B8%AA%E4%BA%BA%E6%84%9F%E6%82%9F/</url>
+    <content><![CDATA[<hr>
+<p>2024.04.22</p>
+<p>从小虽说学习不好，但是只知道学习，根本不懂得关于感情等各方面的事情。<br>到了高中也是，不知道如何对待喜欢的人与被喜欢的人。<br>到了大学之后，见识到了很多，也实现了网络自由，了解到了各式各样的观点与想法，这才发现原来我是那么的不成熟，还是仅仅是一个书呆子。<br>可能只有观点与思想的碰撞，才能获得更多的成长。真是应了那句俗话：读万卷书不如行万里路，行万里路不如阅人无数；不能多与人交流就像<strong>闭关锁国</strong>，永远不能进步！！！！</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>日记</title>
+    <url>/2024/04/22/%E6%97%A5%E8%AE%B0%EF%BC%882024-04-22%EF%BC%89/</url>
+    <content><![CDATA[<h2 id="健身"><a href="#健身" class="headerlink" title="健身"></a>健身</h2><p>今天练了上半身，也没啥明显进步好像</p>
+<h2 id="学业"><a href="#学业" class="headerlink" title="学业"></a>学业</h2><p>考研之前王建民要让弄一个博客，当时发现了hexo这个好东西，但是没什麽时间，就随便糊弄了一下。今天终于是把他弄出来了，还用了一下github的自动部署，确实好用奥</p>
+<p>做做毕设！！赶紧把论文搞一搞，早搞完早没事！</p>
+]]></content>
+      <tags>
+        <tag>日记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于信息差</title>
+    <url>/2024/05/04/%E5%85%B3%E4%BA%8E%E4%BF%A1%E6%81%AF%E5%B7%AE/</url>
+    <content><![CDATA[<h2 id="信息差是什么"><a href="#信息差是什么" class="headerlink" title="信息差是什么"></a>信息差是什么</h2><p>信息差是每个人所知道的信息之间的差距，其中所知道的信息不仅仅包含我们九年义务教育所学到的知识，生活小常识，一般化的生活技能（如骑车、游泳）等；更重要的是一些帮助人迅速成长与发展的渠道，<strong>这种渠道在给你带来快速发展的同时，也会让你看到新的机会</strong>。所以我认为，信息差其实在本质上跟世面这个词没有区别，你见过的世面越多，获取的信息就比别人更多，就会拉开自己与别人的差距。</p>
+<h2 id="为什么信息差那么重要"><a href="#为什么信息差那么重要" class="headerlink" title="为什么信息差那么重要"></a>为什么信息差那么重要</h2><p>我只是一个小镇做题家，当时小孩子的我什么都意识不到（现在也是小孩子😁），只会傻傻的<strong>认为老师都是高高在上的那种</strong>，老师经历过那么多，一定比我们小孩子懂得东西要多吧，刚入学的时候就傻傻的跟着老师的资料做，傻傻的跟着老师的进度走，最后发现我学不会，陷入自我怀疑之中，觉得自己挺笨的（其实不是）。</p>
+<p>高考有信息差，当初英语我打死都学不会，后来我妈不知道在哪找了一个网课，给我听了听，发现英语原来是这样的，不是我不会，而是老师教不会；数学物理方面呢，当时寒假给了我足够的时间去网上搜寻资料，知道了<strong>赵礼显</strong>这个老师，还在B站上找到了很多清北的高考数学老师，但是当时由于时间真的太紧迫了，所以他们的课我也没有仔细去品，正因为能找到这么多的讲的非常好的老师，所以我大概比平时会的要多一点（虽然跟那些天赋型选手没法比，但是我也知足了）；其他科目也就是类似的情况。</p>
+<p>大学也有信息差，当有的人已经开始为保研去做努力时，我还在为我的好面子去隐瞒我的经历（我不想让别人知道我跟他们有什么不一样），<strong>这简直大错特错</strong>😐，当时的我还没有从高中学生的思维中转变过来，怪我怪我。<strong>但当时的我其实也做出了最好的选择</strong></p>
+<p>考研也有信息差，但是考研时的时间太紧迫了，导致我并没有很多时间去搜集这些信息，还是要靠我的同学朋友跟我说与交流，我只将重点放在了数学和408上。但是最终结果是好的😁</p>
+<p>现在临近大学毕业，我也考上了研，已经没有那么焦虑自己的未来了，有了更多的时间去<strong>水牛客、知乎、小黑盒等（大学生）论坛</strong>，越水我越发现，获取信息的能力是多么的重要，这篇文章是我在看到一个二本大佬进大厂的帖子后写下来的，他在大学时就参加了开源项目，而我只是听说过，并不了解这个流程，在评论区他的解惑让我明白，<strong>学历只是为小镇做题家颁发的一个证书，他仅仅代表着你的做题能力</strong>，仅此而已。当时的我瞬间就感受到了信息差带来的差距，获取更多的信息是把握机会的前提，只有先了解，才能看到，机会不可能主动向你砸来，这就是获取信息的意义，也意味着信息差是多么的重要。</p>
+<h2 id="如何获取这些信息呢"><a href="#如何获取这些信息呢" class="headerlink" title="如何获取这些信息呢"></a>如何获取这些信息呢</h2><p>如果是本专业的内容，最好找一个大佬来带你，一定要是大佬，不一定是学长，也可以是学弟。<strong>生乎吾前，其闻道也固先乎吾，吾从而师之；生乎吾后，其闻道也亦先乎吾，吾从而师之。</strong>但是大佬还是比较少的，如果找不到的话，<strong>可以在自己闲下来的时候，多逛逛社区，QQ群，小黑盒，贴吧也行</strong>，看一些有意义的文字，打游戏不要上瘾，能少打就少打，因为游戏不会带给你本专业的信息，更不会获取信息。如果你是大学生，不要在宿舍里躺着，宿舍的环境会让你无法思考，去教室躺着也行，因为去教室路上发生的事情都比你在宿舍有意思的多。</p>
+<p>对于计算机专业，我总结一些自己暂时了解到的内容</p>
+<ul>
+<li>八股：javaGuide、小林coding、CS-notes</li>
+<li>算法：代码随想录、力扣</li>
+<li>计算机基础：408、MIT公开课实验”礼包”(6.828+6.824)</li>
+<li>开源项目：开源活动（自己百度</li>
+<li>论坛：牛客、各种知识星球、知乎等</li>
+</ul>
+<p>暂时就这些，希望对你有帮助，在计算机专业没听过的黑话，都可以百度搜索，也可以搜索上述关键词，更好的帮你完成专业技能的培养。</p>
+<h2 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h2><p>去经历，去思考，出去走走总不是坏事；少玩游戏，多逛论坛，总能发现让你共鸣的内容；屎里淘金也比一直在屎里躺着强。<strong>信息差真的很重要！！！</strong></p>
+<p>最后，愿我们都天天开心😁，共勉！</p>
+<p>（写的有点烂，我会努力改进）</p>
+]]></content>
+      <tags>
+        <tag>碎碎念</tag>
+      </tags>
+  </entry>
+</search>
